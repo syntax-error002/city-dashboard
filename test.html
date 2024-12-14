@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+   
+</head>
+<body>
+   
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">London overview</div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Dashboard</a>
+                <a href="#" class="nav-link">Weather</a>
+                <a href="#" class="nav-link">Activities</a>
+                <a href="#" class="nav-link">news</a>
+            </div>
+        </div>
+    </nav>
+
+   
+    <section class="hero">
+        <div class="hero-top">
+            <div class="hero-time">
+                <div class="time" id="current-time">12:00:00</div>
+                <div class="date" id="current-date">Monday, January 1</div>
+            </div>
+            <div class="hero-weather">
+                <div class="current-temp">
+                    <i class="fas fa-sun"></i>
+                    <span id="hero-temp">21°C</span>
+                </div>
+                <div class="weather-brief" id="hero-weather-desc">Sunny</div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to London</h1>
+            <p class="hero-subtitle">Discover the pulse of the city in real-time</p>
+        </div>
+    </section>
+    
+
+    
+    <main class="dashboard">
+        <!-- Weather Card -->
+        <div class="card weather-card">
+            <div class="weather-header">
+                <h2>Current Weather</h2>
+                <span class="live-indicator">LIVE</span>
+            </div>
+            <div class="weather-temp">21°C</div>
+            <p>Partly Cloudy</p>
+            <div class="weather-details">
+                <div class="weather-detail">
+                    <i class="fas fa-wind"></i>
+                    <p>12 km/h</p>
+                    <span>Wind</span>
+                </div>
+                <div class="weather-detail">
+                    <i class="fas fa-tint"></i>
+                    <p>65%</p>
+                    <span>Humidity</span>
+                </div>
+                <div class="weather-detail">
+                    <i class="fas fa-sun"></i>
+                    <p>UV 5</p>
+                    <span>UV Index</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Card -->
+        <div class="card stats-card">
+            <h2>City Stats</h2>
+            <div class="stat">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div>
+                    <h3>Population</h3>
+                    <p>8.9M</p>
+                </div>
+            </div>
+            <div class="stat">
+                <div class="stat-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div>
+                    <h3>Districts</h3>
+                    <p>32</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity Card -->
+        <div class="card activity-card">
+            <h2>Today's Activities</h2>
+            <div class="activity-item">
+                <i class="fas fa-calendar"></i>
+                <div>
+                    <h3>Tower Bridge Exhibition</h3>
+                    <p>10:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+            <div class="activity-item">
+                <i class="fas fa-ticket-alt"></i>
+                <div>
+                    <h3>West End Show</h3>
+                    <p>7:30 PM - 10:00 PM</p>
+                </div>
+            </div>
+        </div>
+        <!-- Transport Card -->
+<div class="card transport-card">
+    <h2>Transport Status</h2>
+    <div class="transport-lines">
+        <div class="transport-line">
+            <div class="line-indicator status-good"></div>
+            <div class="line-info">
+                <h4>Central Line</h4>
+                <p>Good Service</p>
+            </div>
+        </div>
+        <div class="transport-line">
+            <div class="line-indicator status-delayed"></div>
+            <div class="line-info">
+                <h4>District Line</h4>
+                <p>Minor Delays</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Events Card -->
+<div class="card events-card">
+    <h2>Upcoming Events</h2>
+    <div class="event-list">
+        <div class="event-item">
+            <img src="https://source.unsplash.com/300x200/?concert" alt="Event">
+            <div class="event-details">
+                <h4>Summer Festival</h4>
+                <p><i class="fas fa-calendar"></i> This Weekend</p>
+                <p><i class="fas fa-map-marker-alt"></i> Hyde Park</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Air Quality Card -->
+<div class="card air-quality-card">
+    <h2>Air Quality</h2>
+    <div class="air-quality-meter">
+        <div class="meter-reading">
+            <span class="reading-value">72</span>
+            <span class="reading-label">Good</span>
+        </div>
+        <div class="meter-details">
+            <div class="detail-item">
+                <span>PM2.5</span>
+                <span>15 µg/m³</span>
+            </div>
+            <div class="detail-item">
+                <span>NO2</span>
+                <span>23 µg/m³</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- News Card -->
+<div class="card news-card">
+    <h2>Local News</h2>
+    <div class="news-list">
+        <div class="news-item">
+            <span class="news-time">2h ago</span>
+            <h4>City Council Announces New Green Initiative</h4>
+            <p>Major environmental project launched to increase urban green spaces.</p>
+        </div>
+        <div class="news-item">
+            <span class="news-time">4h ago</span>
+            <h4>Weekend Cultural Festival</h4>
+            <p>Local artists to showcase work in city center.</p>
+        </div>
+    </div>
+</div>
+<div id="particles-js"></div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+   <script src="scr.js"></script>
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</body>
+</html>
